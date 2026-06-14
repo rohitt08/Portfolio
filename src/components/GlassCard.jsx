@@ -34,7 +34,11 @@ const GlassCard = ({ children, className = '', animate = true, tilt = true }) =>
     y.set(0);
   };
 
-  const CardContent = tilt ? (
+  // Disable tilt on mobile for performance and to fix WebKit blank screen bugs
+  const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
+  const shouldTilt = tilt && !isMobile;
+
+  const CardContent = shouldTilt ? (
     <motion.div 
       ref={ref}
       onMouseMove={handleMouseMove}
@@ -53,7 +57,7 @@ const GlassCard = ({ children, className = '', animate = true, tilt = true }) =>
       </div>
     </motion.div>
   ) : (
-    <div className={`glass-card p-6 w-full ${className}`}>
+    <div className={`glass-card p-6 w-full transition-transform hover:scale-[1.02] ${className}`}>
       {children}
     </div>
   );
