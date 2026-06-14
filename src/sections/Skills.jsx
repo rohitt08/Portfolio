@@ -99,7 +99,7 @@ const Skills = () => {
           variants={containerVariants}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, amount: 0.1 }}
         >
           {skillCategories.map((category, index) => (
             <motion.div key={index} variants={itemVariants} className="h-full">
