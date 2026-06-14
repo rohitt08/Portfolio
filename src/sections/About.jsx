@@ -61,7 +61,7 @@ const About = () => {
             <div className="hidden md:flex flex-shrink-0 relative items-center">
               {/* Glass Frame */}
               <div className="w-56 h-56 rounded-full glass-card flex items-center justify-center shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative z-10 transition-all duration-500 p-2">
-                <img src="/avatar.png" alt="Rohit 3D Portrait" className="w-full h-full rounded-full object-cover shadow-inner" />
+                <img src="/avatar.png" alt="Rohit 3D Portrait" loading="lazy" className="w-full h-full rounded-full object-cover shadow-inner" />
               </div>
             </div>
 
