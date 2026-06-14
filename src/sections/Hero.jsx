@@ -34,17 +34,9 @@ const Hero = () => {
     <section id="hero" className="relative min-h-screen flex items-center justify-center pt-20 px-6 overflow-hidden">
       {/* Background Animated Elements */}
       <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
-        {/* Colorful Glows for ambient lighting */}
-        <motion.div 
-          animate={{ y: [0, -40, 0], scale: [1, 1.1, 1] }}
-          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute top-[20%] left-[10%] w-72 h-72 bg-accent/10 rounded-full blur-[100px]"
-        />
-        <motion.div 
-          animate={{ y: [0, 40, 0], scale: [1, 1.2, 1] }}
-          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-          className="absolute bottom-[20%] right-[10%] w-80 h-80 bg-purple-500/10 rounded-full blur-[100px]"
-        />
+        {/* Colorful Glows for ambient lighting (Static to save mobile GPU) */}
+        <div className="absolute top-[20%] left-[10%] w-72 h-72 bg-accent/10 rounded-full blur-[80px] md:blur-[100px]" />
+        <div className="absolute bottom-[20%] right-[10%] w-80 h-80 bg-purple-500/10 rounded-full blur-[80px] md:blur-[100px]" />
 
         {/* Floating Tech Logos */}
         {floatingIcons.map((item, index) => (
