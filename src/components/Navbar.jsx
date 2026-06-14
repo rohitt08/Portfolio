@@ -138,12 +138,9 @@ const Navbar = () => {
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
-            transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className="fixed inset-y-0 right-0 w-full max-w-sm bg-primary/95 backdrop-blur-2xl border-l border-white/10 shadow-[-20px_0_40px_rgba(0,0,0,0.5)] z-50 lg:hidden flex flex-col overflow-hidden"
+            transition={{ type: "tween", duration: 0.3, ease: "easeInOut" }}
+            className="fixed inset-y-0 right-0 w-full max-w-sm bg-[#0A0A0A] border-l border-white/10 shadow-[-20px_0_40px_rgba(0,0,0,0.5)] z-50 lg:hidden flex flex-col overflow-hidden"
           >
-            {/* Inner Glow */}
-            <div className="absolute top-0 right-0 w-64 h-64 bg-accent/10 rounded-full blur-[80px] pointer-events-none"></div>
-
             <div className="relative flex items-center justify-between p-6 border-b border-white/5">
               <h2 className="text-xl font-bold text-white tracking-tight flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-accent animate-pulse"></span>

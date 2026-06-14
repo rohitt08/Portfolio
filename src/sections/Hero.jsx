@@ -66,7 +66,7 @@ const Hero = () => {
               opacity: [0.3, 0.7, 0.3]
             }}
             transition={{ duration: dot.duration, repeat: Infinity, ease: "easeInOut", delay: dot.delay }}
-            className={`absolute w-2 h-2 rounded-full ${dot.color} blur-[1px]`}
+            className={`absolute hidden md:block w-2 h-2 rounded-full ${dot.color} blur-[1px]`}
             style={{ top: dot.top, left: dot.left, right: dot.right, bottom: dot.bottom }}
           />
         ))}
