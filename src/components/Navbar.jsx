@@ -17,7 +17,6 @@ const Navbar = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        // Find the intersecting entry with the highest intersection ratio
         const visibleSections = entries.filter((entry) => entry.isIntersecting);
         if (visibleSections.length > 0) {
           setActiveSection(visibleSections[0].target.id);
@@ -31,7 +30,18 @@ const Navbar = () => {
       if (section) observer.observe(section);
     });
 
-    return () => observer.disconnect();
+    // Fallback: Clear active section when scrolled to the very top (Hero section)
+    const handleScroll = () => {
+      if (window.scrollY < 100) {
+        setActiveSection('');
+      }
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   const handleNavClick = (href) => {
