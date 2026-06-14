@@ -85,13 +85,13 @@ const Hero = () => {
         </motion.div>
 
         <motion.h1 
-          className="text-5xl md:text-7xl font-bold tracking-tight mb-6"
+          className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight mb-6"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          Code that scales. <br className="hidden md:block" />
-          <span className="text-gradient">Design that speaks.</span>
+          <span className="block text-white">Code that scales.</span>
+          <span className="block text-secondary mt-2">Design that speaks.</span>
         </motion.h1>
 
         <motion.p 

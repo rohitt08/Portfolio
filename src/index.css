@@ -38,11 +38,11 @@
 
 @layer components {
   .glass-card {
-    @apply bg-[rgba(255,255,255,0.03)] backdrop-blur-md border border-[rgba(255,255,255,0.08)] rounded-2xl;
+    @apply bg-[rgba(255,255,255,0.03)] md:backdrop-blur-md border border-[rgba(255,255,255,0.08)] rounded-2xl;
   }
   
   .glass-panel {
-    @apply bg-[rgba(255,255,255,0.02)] backdrop-blur-xl border-b border-[rgba(255,255,255,0.05)];
+    @apply bg-[rgba(255,255,255,0.02)] md:backdrop-blur-xl border-b border-[rgba(255,255,255,0.05)];
   }
 
   .text-gradient {

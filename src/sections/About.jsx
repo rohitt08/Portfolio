@@ -158,7 +158,7 @@ const About = () => {
                <div className="mt-2"><span className="text-accent font-bold">~</span> <span className="text-white animate-pulse">_</span></div>
                
                {/* O(1) Badge */}
-               <div className="absolute bottom-3 right-3 bg-white/10 backdrop-blur-md border border-white/20 px-3 py-1.5 rounded-full text-white font-bold text-[10px] md:text-xs shadow-lg flex items-center gap-2 transform transition-transform group-hover:scale-110 whitespace-nowrap z-20">
+               <div className="absolute bottom-3 right-3 bg-white/10 md:backdrop-blur-md border border-white/20 px-3 py-1.5 rounded-full text-white font-bold text-[10px] md:text-xs shadow-lg flex items-center gap-2 transform transition-transform group-hover:scale-110 whitespace-nowrap z-20">
                  <FiCode className="text-accent" /> O(1) Optimized
                </div>
             </div>
