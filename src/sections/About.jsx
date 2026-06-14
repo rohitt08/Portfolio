@@ -118,17 +118,17 @@ const About = () => {
               </div>
 
               {/* Stack Layers */}
-              <div className="relative z-10 w-full bg-[#0A0A0A] backdrop-blur-md border border-white/10 rounded-xl p-3.5 flex items-center gap-3 transform transition-all duration-300 group-hover:-translate-y-1 hover:!border-[#61DAFB] shadow-lg">
+              <div className="relative z-10 w-full bg-[#0A0A0A] md:backdrop-blur-md border border-white/10 rounded-xl p-3.5 flex items-center gap-3 transform transition-all duration-300 group-hover:-translate-y-1 hover:!border-[#61DAFB] shadow-lg">
                 <div className="bg-[#61DAFB]/10 p-2 rounded-lg"><FiLayout className="text-[#61DAFB]" size={18} /></div>
                 <span className="text-white text-sm font-semibold">Frontend</span>
               </div>
               
-              <div className="relative z-10 w-full bg-[#0A0A0A] backdrop-blur-md border border-white/10 rounded-xl p-3.5 flex items-center gap-3 transform transition-all duration-300 group-hover:-translate-y-1 hover:!border-purple-500 shadow-lg" style={{ transitionDelay: '50ms' }}>
+              <div className="relative z-10 w-full bg-[#0A0A0A] md:backdrop-blur-md border border-white/10 rounded-xl p-3.5 flex items-center gap-3 transform transition-all duration-300 group-hover:-translate-y-1 hover:!border-purple-500 shadow-lg" style={{ transitionDelay: '50ms' }}>
                 <div className="bg-purple-500/10 p-2 rounded-lg"><FiServer className="text-purple-500" size={18} /></div>
                 <span className="text-white text-sm font-semibold">Backend</span>
               </div>
 
-              <div className="relative z-10 w-full bg-[#0A0A0A] backdrop-blur-md border border-white/10 rounded-xl p-3.5 flex items-center gap-3 transform transition-all duration-300 group-hover:-translate-y-1 hover:!border-success shadow-lg" style={{ transitionDelay: '100ms' }}>
+              <div className="relative z-10 w-full bg-[#0A0A0A] md:backdrop-blur-md border border-white/10 rounded-xl p-3.5 flex items-center gap-3 transform transition-all duration-300 group-hover:-translate-y-1 hover:!border-success shadow-lg" style={{ transitionDelay: '100ms' }}>
                 <div className="bg-success/10 p-2 rounded-lg"><FiDatabase className="text-success" size={18} /></div>
                 <span className="text-white text-sm font-semibold">Database</span>
               </div>

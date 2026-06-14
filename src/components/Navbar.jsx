@@ -125,7 +125,7 @@ const Navbar = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 bg-black/60 backdrop-blur-md z-40 lg:hidden"
+            className="fixed inset-0 bg-black/95 z-40 lg:hidden"
             onClick={() => setIsOpen(false)}
           />
         )}
