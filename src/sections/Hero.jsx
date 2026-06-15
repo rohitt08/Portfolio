@@ -112,7 +112,7 @@ const Hero = () => {
           <Button href="#projects">
             View Projects <FiArrowRight />
           </Button>
-          <Button variant="secondary" href="YOUR_RESUME_LINK_HERE">
+          <Button variant="secondary" href="https://drive.google.com/file/d/1cxiokvnHp49g9XdJw4HW8mgDgmBte5XW/view?usp=sharing">
             Download Resume
           </Button>
         </motion.div>
