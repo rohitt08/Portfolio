@@ -100,7 +100,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          A Frontend Developer and Graphic Designer bridging the gap between pixel-perfect aesthetics and robust web performance.
+          A Full Stack Developer and UI/UX Designer bridging the gap between pixel-perfect aesthetics and robust web performance.
         </motion.p>
 
         <motion.div 
